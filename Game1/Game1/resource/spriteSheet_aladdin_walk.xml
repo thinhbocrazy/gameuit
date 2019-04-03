@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:42e9e81d478481ae5256105381a574ee:dacc6c0cfe930c1a05b638734e91f18e:5e19a821c9532e5017e39bcf01f01809$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="ninjagaiden.bmp" width="87" height="34">
+    <sprite n="0.bmp" x="1" y="1" w="17" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="1.bmp" x="20" y="1" w="20" h="31" pX="0.5" pY="0.5"/>
+    <sprite n="2.bmp" x="42" y="1" w="22" h="31" pX="0.5" pY="0.5"/>
+    <sprite n="3.bmp" x="66" y="1" w="20" h="31" pX="0.5" pY="0.5"/>
+</TextureAtlas>
