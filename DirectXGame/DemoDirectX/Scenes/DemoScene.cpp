@@ -10,7 +10,7 @@ void DemoScene::LoadContent()
     //set mau backcolor cho scene o day la mau xanh
     mBackColor = 0x54acd2;
 
-    mMap = new GameMap("Resources/marioworld1-1.tmx");
+    mMap = new GameMap("Resources/ninja31test.tmx");
 
     mCamera = new Camera(GameGlobal::GetWidth(), GameGlobal::GetHeight());
     mCamera->SetPosition(GameGlobal::GetWidth() / 2, 
@@ -20,8 +20,8 @@ void DemoScene::LoadContent()
     mMap->SetCamera(mCamera);
 
 	mPlayer = new Player();
-	mPlayer->SetPosition(GameGlobal::GetWidth() / 2, GameGlobal::GetHeight() / 2);
-	
+	//mPlayer->SetPosition(GameGlobal::GetWidth() / 2, GameGlobal::GetHeight() / 2);
+	mPlayer->SetPosition(110, 110);
 	mPlayer->SetCamera(mCamera);
 }
 
@@ -37,7 +37,7 @@ void DemoScene::Draw()
 {
     mMap->Draw();
 	mPlayer->Draw();
-	
+	//mCamera->SetPosition(mPlayer->GetPosition());
 }
 
 void DemoScene::OnKeyDown(int keyCode)
